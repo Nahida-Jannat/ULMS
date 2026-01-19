@@ -1,0 +1,151 @@
+/* ===== VARIABLES ===== */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --container-bg: rgba(255,255,255,0.9);
+  --header-bg: #0d3b66;
+  --btn-bg: #f4d35e;
+  --btn-text: #000;
+  --table-header-bg: #0d3b66;
+  --table-header-text: #fff;
+  --table-row-hover: #f2f2f2;
+}
+
+/* DARK MODE VARIABLES */
+body.dark-mode {
+  --bg-color: #121212 !important;
+  --text-color: #f0f0f0 !important;
+  --container-bg: rgba(20,20,20,0.95) !important;
+  --header-bg: #1a1a1a !important;
+  --btn-bg: #333 !important;
+  --btn-text: #f0f0f0 !important;
+  --table-header-bg: #1a1a1a !important;
+  --table-header-text: #f0f0f0 !important;
+  --table-row-hover: #333 !important;
+}
+
+/* ===== GLOBAL STYLES ===== */
+body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  transition: all 0.4s ease;
+  font-family: Arial, sans-serif;
+}
+
+.container, .card, .login-box {
+  background-color: var(--container-bg) !important;
+  transition: all 0.4s ease;
+}
+
+header {
+  background-color: var(--header-bg) !important;
+  color: var(--text-color) !important;
+  padding: 15px;
+  text-align: center;
+  border-radius: 6px;
+  transition: all 0.4s ease;
+}
+
+/* Buttons override any inline style */
+button, .btn, input[type="submit"] {
+  background-color: var(--btn-bg) !important;
+  color: var(--btn-text) !important;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover, input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: var(--text-color) !important;
+}
+
+th {
+  background-color: var(--table-header-bg) !important;
+  color: var(--table-header-text) !important;
+  padding: 10px;
+}
+
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: var(--table-row-hover) !important;
+}
+
+/* ===== DARK MODE BUTTON ===== */
+#darkModeToggle {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 5px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--btn-bg) !important;
+  color: var(--btn-text) !important;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* ===== DARK MODE OVERRIDES FOR TABLES & TEXT ===== */
+body.dark-mode {
+  /* Ensure overall text is readable */
+  color: #f0f0f0 !important;
+}
+
+/* Make sure tables and table cells are visible */
+body.dark-mode table, 
+body.dark-mode td, 
+body.dark-mode th {
+  background-color: transparent !important; /* Use header bg for th */
+  color: var(--table-header-text) !important;
+}
+
+/* Table header dark bg */
+body.dark-mode th {
+  background-color: var(--table-header-bg) !important;
+  color: var(--table-header-text) !important;
+}
+
+/* Table rows hover */
+body.dark-mode tr:hover {
+  background-color: #333 !important;
+  color: #f0f0f0 !important;
+}
+
+/* Any form input text */
+body.dark-mode input, 
+body.dark-mode select, 
+body.dark-mode textarea {
+  background-color: #222 !important;
+  color: #fffefe !important;
+  border: 1px solid #555 !important;
+}
+
+/* Card / box background */
+body.dark-mode .card,
+body.dark-mode .container,
+body.dark-mode .login-box {
+  background-color: var(--container-bg) !important;
+  color: #fdfdfd !important;
+}
+
+/* Buttons text + background */
+body.dark-mode button,
+body.dark-mode .btn,
+body.dark-mode input[type="submit"] {
+  background-color: var(--btn-bg) !important;
+  color: var(--btn-text) !important;
+}
