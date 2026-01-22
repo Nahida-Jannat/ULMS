@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 15, 2025 at 09:07 AM
+-- Generation Time: Nov 11, 2025 at 09:07 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -441,12 +441,12 @@ CREATE TABLE `reservations` (
 --
 
 INSERT INTO `reservations` (`reservation_id`, `book_id`, `user_id`, `reservation_date`, `due_date`, `returned`) VALUES
-(24, 1, 111, '2025-01-18', '2025-01-02', 'No'),
-(25, 2, 111, '2025-01-18', '2025-01-16', 'No'),
-(26, 7, 112, '2025-01-18', '2025-01-01', 'No'),
-(28, 5, 112, '2025-01-18', '2025-01-03', 'Yes'),
-(32, 29, 112, '2025-01-25', '2025-02-01', 'No'),
-(33, 35, 111, '2025-02-07', '2025-02-14', 'No');
+(24, 1, 111, '2025-11-25', '2025-12-1', 'No'),
+(25, 2, 111, '2025-12-18', '2025-12-25', 'No'),
+(26, 7, 112, '2025-12-18', '2025-12-25', 'No'),
+(28, 5, 112, '2025-12-19', '2025-12-26', 'Yes'),
+(32, 29, 112, '2025-12-26', '2026-01-02', 'No'),
+(33, 35, 111, '2026-01-07', '2026-01-14', 'No');
 
 -- --------------------------------------------------------
 
@@ -467,10 +467,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `name`, `email`, `password`, `role`) VALUES
-(1, 'Shoaib', 'shoaib@13', '123', 'admin'),
-(3, 'Nahida', 'nahida@admin.com', 'aaa', 'staff'),
-(111, 'Asif', 'Asif@123', '111', 'student'),
-(112, 'Robbad', 'robbad@stud', '111', 'student');
+(1, 'Nahida Jannat', 'nahida@gmail.com', '123', 'admin'),
+(2, 'Mayouree', 'mayouree@gmail.com', '123', 'staff'),
+(111, 'Asif', 'Asif@gmail.com', '111', 'student'),
+(112, 'Sagor', 'sagor@gmail.com', '112', 'student');
 
 --
 -- Indexes for dumped tables
