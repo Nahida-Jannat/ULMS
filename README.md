@@ -33,7 +33,7 @@ The **University Library Management System** is a web-based application designed
 ### Steps
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Zureor/ULMS.git
+   git clone https://github.com/Nahida-Jannat/ULMS
    ```
 2. **Move the project to the XAMPP htdocs directory:**
    ```bash
@@ -57,10 +57,6 @@ The **University Library Management System** is a web-based application designed
 ## API for Bulk Book Addition
 - The system includes an API to allow bulk book uploads.
 - Refer to the `api_fetch.php` file for API  usage.
-
-
-## Contributing
-If you'd like to contribute, feel free to fork the repository and submit a pull request.
 
 ## License
 This project is open-source and available under the [MIT License](LICENSE).
